@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="77px" height="47px" viewBox="0 0 77 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>eye</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="2018" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="eye" transform="translate(4.000000, 3.000000)" stroke="#FFFFFF" stroke-width="6">
+            <path d="M0,20.5 C0,20.5 13.6275,0 34.5,0 C55.2,0 69,20.5 69,20.5 C69,20.5 55.0275,41 34.5,41 C13.8,41 0,20.5 0,20.5 Z" id="Shape"></path>
+            <circle id="Oval" cx="34.5" cy="13.5" r="13.5"></circle>
+        </g>
+    </g>
+</svg>
