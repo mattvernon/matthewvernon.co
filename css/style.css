@@ -16,6 +16,9 @@ body {
   box-sizing: border-box;
   cursor: url("../assets/happy.svg"), auto; }
 
+body::-webkit-scrollbar {
+  display: none; }
+
 .wrapper {
   max-width: 2000px;
   margin: 0 auto;
@@ -56,6 +59,9 @@ a {
 a:hover {
   color: white;
   border-bottom: 1px solid white; }
+
+p {
+  line-height: 24px; }
 
 /* remove default form styles */
 input[type=text],
@@ -167,17 +173,29 @@ input[type=submit]:hover {
 
 /* LAYOUT ======================= */
 section {
-  margin: 200px auto 0 auto; }
+  margin: 300px auto 0 auto; }
 
 #intro {
-  max-width: 600px; }
+  max-width: 600px;
+  margin-top: 200px; }
 
 #hero {
   max-width: 570px;
+  margin-top: 200px;
   position: relative; }
   #hero .hero-img {
     width: 100%;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    background-image: url("../assets/yellow.jpg");
+    background-size: cover;
+    background-position: center center;
+    transition: 0.5s; }
+  #hero .hero-img:hover {
+    background-image: url("../assets/melrose.jpg"); }
+  #hero .hero-img:before {
+    content: "";
+    display: block;
+    padding-top: 100%; }
   #hero .available-img {
     position: absolute;
     top: -70px;
@@ -205,7 +223,9 @@ section {
 
 #hire {
   max-width: 800px;
-  cursor: auto; }
+  cursor: auto;
+  padding-top: 200px;
+  margin-top: 0px; }
   #hire h3 {
     max-width: 500px;
     margin: 30px auto; }
@@ -227,13 +247,39 @@ section {
   color: white; }
 
 /* FUN THINGS ======================= */
-.progress-bar {
+.bar-1,
+.bar-3 {
   position: fixed;
-  top: 0;
-  width: 0%;
   height: 8px;
-  background-color: white;
-  z-index: 900; }
+  background-color: #F5E78E;
+  z-index: 900;
+  width: 0%;
+  box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.18); }
+
+.bar-2,
+.bar-4 {
+  position: fixed;
+  width: 8px;
+  background-color: #F5E78E;
+  z-index: 900;
+  height: 0%;
+  box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.18); }
+
+.bar-1 {
+  top: 0;
+  left: 0; }
+
+.bar-2 {
+  top: 0;
+  right: 0; }
+
+.bar-3 {
+  bottom: 0;
+  right: 0; }
+
+.bar-4 {
+  bottom: 0;
+  left: 0; }
 
 .hire-left,
 .hire-right {
@@ -255,10 +301,13 @@ section {
 .hire-right:hover {
   border-bottom: none; }
 
+footer {
+  max-width: 300px;
+  margin: 200px auto; }
+
 .backtotop {
   display: inline-block;
-  margin-top: 200px;
-  margin-bottom: 200px; }
+  margin-top: 60px; }
 
 #projects a {
   transition: none;
