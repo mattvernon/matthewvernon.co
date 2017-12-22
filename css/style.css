@@ -191,7 +191,7 @@ section {
     background-position: center center;
     transition: 0.5s; }
   #hero .hero-img:hover {
-    background-image: url("../assets/melrose.jpg"); }
+    background-image: url("../assets/Melrose.jpg"); }
   #hero .hero-img:before {
     content: "";
     display: block;
