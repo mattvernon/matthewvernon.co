@@ -247,15 +247,34 @@ section {
   .hero-img {
     width: 100%;
     margin-bottom: 30px;
-    background-image: url("../assets/yellow.jpg");
+    background-image: url("../assets/me.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: left center;
     transition: 0.5s;
   }
 
-  .hero-img:hover {
-    background-image: url("../assets/Melrose.jpg");
-  }
+  .hero-img:after {
+  	content: "";
+  	position: absolute;
+    display: block;
+  	top: 0; left: 0; bottom: 0; right: 0;
+  	background: url("../assets/me.jpg");
+  	background-position: right center;
+    background-size: cover;
+  	opacity: 0;
+  	-webkit-transition: opacity 0.5s;
+  	-moz-transition:    opacity 0.5s;
+  	-o-transition:      opacity 0.5s;
+    max-height: 570px;
+}
+
+.hero-img:hover:after {
+	opacity: 1;
+}
+
+  // .hero-img:hover {
+  //   background-image: url("../assets/Melrose.jpg");
+  // }
 
   .hero-img:before {
     content: "";
@@ -612,6 +631,10 @@ MOBILE STYLES !!!!
   .hire-left,
   .hire-right {
     display: none;
+  }
+
+  .hero-img:hover:after {
+  	opacity: 0!important;
   }
 
 }
