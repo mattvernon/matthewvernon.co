@@ -245,6 +245,11 @@ section {
   #hire h3 {
     max-width: 500px;
     margin: 30px auto; }
+  #hire .email {
+    margin-top: 100px; }
+    #hire .email p {
+      margin-top: 5px;
+      margin-bottom: 0px; }
 
 #future {
   max-width: 700px; }
