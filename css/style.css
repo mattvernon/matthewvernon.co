@@ -23,8 +23,7 @@ body::-webkit-scrollbar {
   width: 50%;
   height: 100%;
   display: inline-block;
-  margin: 0;
-  padding: 70px 80px; }
+  margin: 0; }
 
 .right {
   background-image: url("../assets/holo.jpg");
@@ -73,12 +72,57 @@ a:hover {
   position: fixed;
   top: 80px;
   right: 80px;
-  opacity: 1; }
+  opacity: 0.8; }
 
 .r-b {
   position: fixed;
   right: 80px;
   bottom: 80px;
-  opacity: 1; }
+  opacity: 0.8; }
+
+@media (max-width: 680px) {
+  body {
+    flex-direction: column; }
+
+  .left, .right {
+    width: 100% !important;
+    height: 50% !important; }
+
+  .l-t {
+    text-align: center;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+    font-size: 16px; }
+    .l-t a {
+      font-size: 16px; }
+
+  .center {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 20px;
+    width: 80%; }
+    .center .l-m, .center .l-b {
+      position: static;
+      width: 100%; }
+    .center .l-b {
+      font-size: 16px; }
+    .center a {
+      opacity: 1; }
+
+  .r-t {
+    bottom: 40px;
+    left: 40px;
+    top: auto !important;
+    right: auto !important;
+    font-size: 16px; }
+
+  .r-b {
+    font-size: 16px;
+    right: 40px;
+    bottom: 40px; } }
 
 /*# sourceMappingURL=style.css.map */
